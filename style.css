@@ -1,15 +1,88 @@
-html {
-  height: 100%;
-  background: pink !important;
-}  
-h1{border:7px solid white;
-  border-radius:15px;
-  background-color:tan;
-  font-size:40px;
-  height:80px !important;
+/* Import Font modern Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-p{color:solid white;
-  font-size:15px;
-  font-family:Arial;
- 
- }
+body {
+    background-color: #F7F3E9;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #4A3B32;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 100%;
+    background-color: #FAF6EE;
+    border-bottom: 2px solid #C49A50;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+    text-align: center;
+}
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #C06037;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+li a {
+    text-decoration: none;
+    color: #436965;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+li a:hover {
+    background-color: #C06037;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(192, 96, 55, 0.3);
+}
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 35px auto 50px auto;
+    text-align: center;
+    background:  #FFF5E6;
+    padding: 40px 30px;
+    border-radius: 16px;
+    border: 1px solid  #C49A50;
+    box-shadow: 0 8px 24px rgba(74, 59, 50, 0.06);
+}
+.container h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    color: #C06037;
+    margin-bottom: 20px;
+}
+.container p {
+    font-size: 0.92rem;      
+    line-height: 1.7;         
+    color: #5A4A3E;
+    max-width: 650px;         
+    margin: 0 auto;            
+    text-align: justify;      
+    text-justify: inter-word;
+}
+.logo-konten {
+    width: 210px;             
+    height: 210px;            
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 25px auto;  
+    border-radius: 50%;       
+    box-shadow: 0 6px 18px rgba(74, 59, 50, 0.15); 
+    border: 3px solid #C49A50; 
+}
