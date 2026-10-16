@@ -6,7 +6,7 @@
 body {
     background-color: #FCEDDB;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #7D293F;
+    color: #B0183D;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,16 +14,16 @@ body {
 }
 header {
     width: 100%;
-    background-color: #FF5E5E;
+    background-color: #E23C64;
     border-bottom: 2px solid #FFD464;
-    box-shadow: 0 4px 12px rgba(176, 24, 61, 0.12);
+    box-shadow: 0 4px 12px rgba(176, 24, 61, 0.15);
     padding: 20px 0;
     text-align: center;
 }
 h1 {
     font-family: 'Cinzel', serif;
     font-size: 2rem;
-    color: #FFFFFF;
+    color: #FCEDDB;
     letter-spacing: 2px;
     margin-bottom: 15px;
     text-shadow: 1px 1px 2px rgba(176, 24, 61, 0.2);
@@ -36,7 +36,7 @@ ul {
 }
 li a {
     text-decoration: none;
-    color: #7D293F;
+    color: #B0183D;
     background-color: #FCEDDB;
     font-weight: 600;
     font-size: 0.95rem;
@@ -45,8 +45,8 @@ li a {
     transition: all 0.3s ease;
 }
 li a:hover {
-    background-color: #B0183D;
-    color: #FFFFFF;
+    background-color: #FF5E5E;
+    color: #FCEDDB;
     box-shadow: 0 4px 8px rgba(176, 24, 61, 0.3);
 }
 .container {
@@ -54,22 +54,22 @@ li a:hover {
     max-width: 750px;
     margin: 35px auto 50px auto;
     text-align: center;
-    background: #FFFFFF;
+    background: #FCEDDB;
     padding: 40px 30px;
     border-radius: 16px;
-    border: 1px solid #FFD464;
-    box-shadow: 0 8px 24px rgba(176, 24, 61, 0.08);
+    border: 2px solid #FFD464;
+    box-shadow: 0 8px 24px rgba(176, 24, 61, 0.12);
 }
 .container h2 {
     font-family: 'Cinzel', serif;
     font-size: 1.6rem;
-    color: #B0183D;
+    color: #E23C64;
     margin-bottom: 20px;
 }
 .container p {
     font-size: 0.92rem;
     line-height: 1.7;
-    color: #65404A;
+    color: #B0183D;
     max-width: 650px;
     margin: 0 auto;
     text-align: justify;
