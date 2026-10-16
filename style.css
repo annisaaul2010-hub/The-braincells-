@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: #FCEDDB;
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -13,33 +12,28 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 header {
     width: 100%;
     background-color: #FF5E5E;
-    border-bottom: 4px solid #FFD464;
+    border-bottom: 2px solid #FFD464;
     box-shadow: 0 4px 12px rgba(176, 24, 61, 0.12);
     padding: 20px 0;
     text-align: center;
 }
-
 h1 {
     font-family: 'Cinzel', serif;
     font-size: 2rem;
     color: #FFFFFF;
     letter-spacing: 2px;
     margin-bottom: 15px;
-    text-shadow: 1px 2px 3px rgba(176, 24, 61, 0.2);
+    text-shadow: 1px 1px 2px rgba(176, 24, 61, 0.2);
 }
-
 ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
-
 li a {
     text-decoration: none;
     color: #7D293F;
@@ -50,33 +44,28 @@ li a {
     border-radius: 20px;
     transition: all 0.3s ease;
 }
-
 li a:hover {
     background-color: #B0183D;
     color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(176, 24, 61, 0.25);
-    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(176, 24, 61, 0.3);
 }
-
 .container {
     width: 90%;
     max-width: 750px;
     margin: 35px auto 50px auto;
     text-align: center;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
     padding: 40px 30px;
     border-radius: 16px;
-    border: 2px solid #FFD464;
+    border: 1px solid #FFD464;
     box-shadow: 0 8px 24px rgba(176, 24, 61, 0.08);
 }
-
 .container h2 {
     font-family: 'Cinzel', serif;
     font-size: 1.6rem;
     color: #B0183D;
     margin-bottom: 20px;
 }
-
 .container p {
     font-size: 0.92rem;
     line-height: 1.7;
@@ -86,7 +75,6 @@ li a:hover {
     text-align: justify;
     text-justify: inter-word;
 }
-
 .logo-konten {
     width: 210px;
     height: 210px;
@@ -97,31 +85,3 @@ li a:hover {
     box-shadow: 0 6px 18px rgba(176, 24, 61, 0.15);
     border: 3px solid #FFD464;
 }
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.6rem;
-    }
-
-    ul {
-        gap: 10px;
-    }
-
-    li a {
-        font-size: 0.85rem;
-        padding: 8px 12px;
-    }
-
-    .container {
-        padding: 30px 20px;
-        margin-top: 25px;
-    }
-
-    .container h2 {
-        font-size: 1.35rem;
-    }
-
-    .logo-konten {
-        width: 180px;
-        height: 180px;
-    }
