@@ -85,82 +85,183 @@ li a:hover {
     box-shadow: 0 6px 18px rgba(176, 24, 61, 0.15);
     border: 3px solid #FFD464;
 }
-header {
-    position: relative;
-    overflow: hidden;
-}
-
-header::before {
-    content: "✦  ·  ✧";
-    position: absolute;
-    top: 12px;
-    left: 18px;
-    color: #FFD464;
-    font-size: 24px;
-    letter-spacing: 8px;
-    pointer-events: none;
-}
-
-header::after {
-    content: "✧  ·  ✦";
-    position: absolute;
-    top: 12px;
-    right: 18px;
-    color: #FFD464;
-    font-size: 24px;
-    letter-spacing: 8px;
-    pointer-events: none;
-}
-
 .container {
+
     position: relative;
+
     overflow: hidden;
+
+}
+
+.container h2 {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+.container h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 120px;
+
+    height: 12px;
+
+    margin: 12px auto 0;
+
+    background: repeating-linear-gradient(
+
+        180deg,
+
+        #FF5E5E 0px,
+
+        #FF5E5E 3px,
+
+        transparent 3px,
+
+        transparent 6px
+
+    );
+
+    border-radius: 50%;
+
+    border-bottom: 3px solid #FFD464;
+
 }
 
 .container::before {
-    content: "✦  ·  ✧\A\A✧\A\A✦";
-    white-space: pre;
+
+    content: "✦  ✧  ·  ✦";
+
     position: absolute;
+
     top: 100px;
-    left: 12px;
+
+    left: 8px;
+
     color: #FFD464;
+
     font-size: 22px;
-    line-height: 2.8;
+
+    line-height: 3;
+
+    text-shadow:
+
+        30px 100px #FF5E5E,
+
+        10px 250px #E23C64,
+
+        25px 400px #FF5E5E;
+
     pointer-events: none;
+
 }
 
 .container::after {
-    content: "✧  ·  ✦\A\A✦\A\A✧";
-    white-space: pre;
+
+    content: "✧  ✦  ·  ✧";
+
     position: absolute;
+
     top: 100px;
-    right: 12px;
+
+    right: 8px;
+
     color: #FF5E5E;
+
     font-size: 22px;
-    line-height: 2.8;
+
+    line-height: 3;
+
+    text-shadow:
+
+        -25px 100px #FFD464,
+
+        -10px 250px #E23C64,
+
+        -30px 400px #FFD464;
+
     pointer-events: none;
+
 }
 
-h1,
-.container h2 {
+header {
+
     position: relative;
-    z-index: 1;
+
+}
+
+header::before {
+
+    content: "✦  ✧  ✦";
+
+    display: block;
+
+    color: #FFD464;
+
+    font-size: 20px;
+
+    letter-spacing: 12px;
+
+    margin-bottom: 8px;
+
+}
+
+header::after {
+
+    content: "〰  ✦  〰";
+
+    display: block;
+
+    color: #FFD464;
+
+    font-size: 22px;
+
+    letter-spacing: 5px;
+
+    margin-top: 12px;
+
 }
 
 .logo-konten {
+
     position: relative;
+
     z-index: 1;
+
 }
 
 @media (max-width: 600px) {
-    header::before,
-    header::after {
-        font-size: 17px;
-        letter-spacing: 3px;
-    }
 
     .container::before,
+
     .container::after {
-        font-size: 17px;
-        line-height: 3;
+
+        font-size: 16px;
+
+        text-shadow:
+
+            15px 100px #FF5E5E,
+
+            8px 250px #E23C64;
+
+    }
+
+    .container h2::after {
+
+        width: 90px;
+
+    }
+
+    header::before,
+
+    header::after {
+
+        font-size: 16px;
+
+        letter-spacing: 6px;
     }
